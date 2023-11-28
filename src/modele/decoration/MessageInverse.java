@@ -28,5 +28,11 @@ public class MessageInverse extends Message {
 	public void setAuteur(String auteur) {
 		this.message.setAuteur(auteur);
 	}
+	public String getInverse() {
+		return inverse;
+	}
+	public void setInverse(String inverse) {
+		this.inverse = inverse;
+	}
 
 }

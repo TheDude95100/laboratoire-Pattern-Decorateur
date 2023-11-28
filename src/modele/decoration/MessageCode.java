@@ -37,5 +37,18 @@ public class MessageCode extends Message{
 	public void setCle(int cle) {
 		this.cle = cle;
 	}
+	public String getTexte() {
+		return this.encodage;
+	}
+	public void setTexte(String texte) {
+		this.message.setTexte(texte);
+		this.encoder();
+	}
+	public String getAuteur() {
+		return message.getAuteur();
+	}
+	public void setAuteur(String auteur) {
+		this.message.setAuteur(auteur);
+	}
 
 }

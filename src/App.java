@@ -1,5 +1,7 @@
 import modele.Message;
 import modele.decoration.MessageCode;
+import modele.decoration.MessageFullCap;
+import modele.decoration.MessageInverse;
 
 public class App {
 
@@ -9,7 +11,11 @@ public class App {
 		
 		message.setTexte("Test");
 		MessageCode msgCode = new MessageCode(message);
+		MessageInverse msgInverse = new MessageInverse(message);
+		MessageFullCap msgFullCap = new MessageFullCap(message);
 		System.out.println(msgCode.getEncodage());
+		System.out.println(msgInverse.getInverse());
+		System.out.println(msgFullCap.getCri());
 		}
 
 }
